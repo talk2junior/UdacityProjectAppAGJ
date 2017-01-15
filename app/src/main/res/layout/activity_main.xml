@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
+    tools:context="com.example.android.udacityprojectappagj.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+        <ImageView
+            android:id="@+id/photo_image_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ups_photo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/location_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp"
+                android:text="UPS Customer Center"
+                android:textSize="16sp"
+                android:textColor="#0000FF"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/location_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="8dp"
+                android:layout_below="@id/location_name"
+                android:text="931 Bailey Ave, Buffalo, NY 14206"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/location_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:layout_margin="2dp"
+                android:layout_below="@id/location_address"
+                android:text="(800)742-5877"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="8dp"
+        android:layout_margin="6dp"
+        android:layout_weight="1"
+        android:text="United Parcel Service, Inc. is the world's largest package delivery company and a provider of supply chain management solutions."
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/web_address"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="8dp"
+        android:layout_margin="6dp"
+        android:layout_weight="1"
+        android:text="www.ups.com"
+        android:textSize="28sp"
+        android:autoLink="web"
+        android:linksClickable="true"/>
+
+    <ImageView
+        android:id="@+id/ups_map"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/web_address"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ups_map"/>
+
+</LinearLayout>
